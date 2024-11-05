@@ -1,7 +1,7 @@
 const API_URL = 'https://guesstheweight-backend.onrender.com/get-weight'; 
 const IMAGE_API_URL = 'https://guesstheweight-backend.onrender.com/generate-image';
-const postLeaderboardAPI = 'https://guesstheweight-backend.onrender.com/api/leaderboard';
-const leaderboardAPI = 'https://guesstheweight-backend.onrender.com/api/getleaderboard';
+const postLeaderboardAPI = 'https://guesstheweight-backend.onrender.com/leaderboard';
+const leaderboardAPI = 'https://guesstheweight-backend.onrender.com/getleaderboard';
 
 let lastWeight = 0;
 let gameActive = true;
