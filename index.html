@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Comparison Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1 class="title" id="title">Let's type a word</h1>
+            <p class="count" id="count">Count: 0</p>
+        </div>
+        <div id="result"></div>
+        <div id="imageContainer"></div>
+        <div id="history"></div>
+        <div class="input-container">
+            <input type="text" id="objectInput" placeholder="Enter an object...">
+            <button id="submitButton">Submit</button>
+            <button id="viewLeaderboardButton">View Leaderboard</button>
+        </div>
+        <div class="footer">
+            <p>Created by <a href="https://github.com/admsmn02" target="_blank">Adam Simon</a></p>
+        </div>
+    </div>
+
+    <div id="scoreModal" class="modal">
+        <div class="modal-content">
+            <span id="closeScoreModal" class="close">&times;</span>
+            <h2>Submit Your Score</h2>
+            <form id="scoreForm">
+                <label for="playerName">Name:</label>
+                <input type="text" id="playerName" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="leaderboardModal" class="modal">
+        <div class="modal-content">
+            <span id="closeLeaderboard" class="close">&times;</span>
+            <h2>Leaderboard</h2>
+            <div id="leaderboard"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
