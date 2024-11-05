@@ -117,6 +117,7 @@ document.getElementById('submitButton').addEventListener('click', async () => {
 function openScoreSubmissionModal() {
     const scoreModal = document.getElementById('scoreModal');
     scoreModal.style.display = 'block';
+    resetGame();
 }
 
 document.getElementById('scoreForm').addEventListener('submit', async (event) => {
